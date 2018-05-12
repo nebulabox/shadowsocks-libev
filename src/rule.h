@@ -33,10 +33,10 @@
 
 #include <libcork/ds.h>
 
-#ifdef HAVE_PCRE_H
-#include <pcre.h>
-#elif HAVE_PCRE_PCRE_H
+#ifdef HAVE_PCRE_PCRE_H
 #include <pcre/pcre.h>
+#else
+#include <pcre.h>
 #endif
 
 typedef struct rule {
