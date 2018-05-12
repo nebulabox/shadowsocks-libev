@@ -17,7 +17,7 @@ SS_COMMON_LIBS += $(top_builddir)/libbloom/libbloom.la \
 else
 SS_COMMON_LIBS += -lbloom -lcork -lcorkipset
 endif
-SS_COMMON_LIBS += -lev -lsodium -lm
+SS_COMMON_LIBS += -lev -lsodium -lm -lpcre
 
 bin_PROGRAMS = ss-local ss-tunnel ss-server
 if !BUILD_WINCOMPAT
